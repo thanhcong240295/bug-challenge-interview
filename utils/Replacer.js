@@ -11,12 +11,12 @@ const tags = [
             return (tag) => _.get(data, tag_cleaner(tag, this.open_tag, this.close_tag))
         }
     },
-	{
-		tag: /\"/g,
-		resolver: function () {
-		  return '\\"';
-		},
+    {
+	tag: /\"/g,
+	resolver: function () {
+	    return '\\"';
 	},
+    },
 ]
 
 /**
